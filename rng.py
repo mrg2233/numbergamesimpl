@@ -5,13 +5,12 @@ guessed = False
 guessc = 0
 
 while not guessed:
-    guess = input("Guess the number:")
+    guess = int(input("Guess the number: "))
     guessc = guessc + 1
-    if int(guess) == i:
+    if guess == i:
         guessed = True
         print("You did it in", + guessc, "tries!")
-    elif int(guess) > i:
-        print("The number is less than", + int(guess))
-    elif int(guess) < i:
-        print("The number is greater than", + int(guess))
-
+    elif guess > i:
+        print("The number is less than", + guess)
+    elif guess < i:
+        print("The number is greater than", + guess)
