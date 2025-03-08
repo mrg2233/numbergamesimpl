@@ -6,7 +6,7 @@ guessc = 0
 
 while not guessed:
     guess = input("Guess the number:")
-    guessc = guessc + 1
+    guessc += 1
     if int(guess) == i:
         guessed = True
         print(f'You did it in {guessc} tries!')
