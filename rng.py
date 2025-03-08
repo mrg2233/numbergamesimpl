@@ -9,7 +9,7 @@ while not guessed:
     guessc = guessc + 1
     if guess == i:
         guessed = True
-        print("You did it in", + guessc, "tries!")
+        print(f'You did it in {guessc} tries!')
     elif guess > i:
         print("The number is less than", + guess)
     elif guess < i:
